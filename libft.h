@@ -6,7 +6,7 @@
 /*   By: tmiftah <tmiftah@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/11 12:30:28 by tmiftah           #+#    #+#             */
-/*   Updated: 2022/10/25 01:12:12 by tmiftah          ###   ########.fr       */
+/*   Updated: 2022/10/26 18:27:33 by tmiftah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,10 +27,10 @@ int					ft_isascii(int i);
 int					ft_isdigit(char c);
 int					ft_isalnum(int c);
 int					ft_isprint(char c);
-void				*ft_memset(char *dest, unsigned char c, int count);
+void				*ft_memset(void *dest, int c, size_t count);
 int					ft_strncmp(const char *s1, const char *s2, unsigned int n);
-char				ft_tolower(char c);
-char				ft_toupper(char c);
+int					ft_tolower(int c);
+int					ft_toupper(int c);
 void				ft_bzero(void *s, unsigned int n);
 void				*ft_memchr(void *str, int c, unsigned int n);
 int					ft_memcmp(void *str1, void *str2, unsigned int n);
