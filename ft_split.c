@@ -6,13 +6,13 @@
 /*   By: tmiftah <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/23 13:17:00 by tmiftah           #+#    #+#             */
-/*   Updated: 2022/10/24 23:38:48 by tmiftah          ###   ########.fr       */
+/*   Updated: 2022/10/27 09:22:42 by tmiftah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	word_count(const char *s, char c)
+static int	word_count(const char *s, char c)
 {
 	int	j;
 
@@ -29,7 +29,7 @@ int	word_count(const char *s, char c)
 	return (j);
 }
 
-int	size(const char *s, char c)
+static int	size(const char *s, char c)
 {
 	int	j;
 
@@ -44,7 +44,7 @@ int	size(const char *s, char c)
 	return (j);
 }
 
-char	*allocation_of_words(const char *s, char c)
+static char	*allocation_of_words(const char *s, char c)
 {
 	int		i;
 	char	*word;

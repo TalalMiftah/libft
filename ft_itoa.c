@@ -6,13 +6,13 @@
 /*   By: tmiftah <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/21 16:31:11 by tmiftah           #+#    #+#             */
-/*   Updated: 2022/10/21 20:12:23 by tmiftah          ###   ########.fr       */
+/*   Updated: 2022/10/27 09:27:19 by tmiftah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	int_count(int i)
+static int	int_count(int i)
 {
 	int	r;
 
