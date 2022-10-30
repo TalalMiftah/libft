@@ -6,7 +6,7 @@
 #    By: tmiftah <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/29 10:58:14 by tmiftah           #+#    #+#              #
-#    Updated: 2022/10/29 11:48:44 by tmiftah          ###   ########.fr        #
+#    Updated: 2022/10/30 09:01:52 by tmiftah          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,9 +22,7 @@ SRC = ft_memset.c ft_atoi.c ft_isalpha.c ft_isdigit.c ft_bzero.c \
 				 ft_strjoin.c ft_strtrim.c ft_strmapi.c ft_striteri.c \
 				 ft_split.c
 
-SRCB = ft_lstnew.c ft_lstadd_front.c ft_lstlast.c ft_lstadd_back.c \
-					ft_lstsize.c ft_lstdelone.c ft_lstclear.c ft_lstiter.c \
-					ft_lstmap.c
+SRCB = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c ft_lstdelone.c ft_lstclear.c
 
 OBJ = $(SRC:%.c=%.o)
 
