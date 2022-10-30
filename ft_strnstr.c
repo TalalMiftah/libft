@@ -6,11 +6,13 @@
 /*   By: tmiftah <tmiftah@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 18:55:42 by tmiftah           #+#    #+#             */
-/*   Updated: 2022/10/27 07:51:32 by tmiftah          ###   ########.fr       */
+/*   Updated: 2022/10/28 18:03:22 by tmiftah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strnstr(const char *ha, const char *ne, unsigned int n)
+#include "libft.h"
+
+char	*ft_strnstr(const char *ha, const char *ne, size_t n)
 {
 	unsigned int	i;
 	unsigned int	j;

@@ -38,12 +38,12 @@ int	ft_atoi(const char *str)
 		result *= -1;
 	return (result);
 }
-//#include <stdio.h>
-//int main()
-//{
-//	printf("1233654: %d",ft_atoi("1233654"));
-//  printf("2147483647 : %d",ft_atoi("2147483647"));
+// #include <stdio.h>
+// int main()
+// {
+// 	printf("1233654: %d\n",ft_atoi("1233654"));
+//  printf("2147483647 : %d\n",ft_atoi("2147483647"));
 //  printf("-2147483648 : %d",ft_atoi("-2147483648"));
-//
+
 //  return 0;
-//}
+// }

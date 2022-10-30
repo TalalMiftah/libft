@@ -6,7 +6,7 @@
 /*   By: tmiftah <tmiftah@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/11 12:30:28 by tmiftah           #+#    #+#             */
-/*   Updated: 2022/10/27 09:36:14 by tmiftah          ###   ########.fr       */
+/*   Updated: 2022/10/28 18:04:10 by tmiftah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,14 @@
 # include<stdlib.h>
 # include<unistd.h>
 
+typedef struct s_list
+{
+	void			*content;
+	struct s_list	*next;
+}					t_list;
+
+t_list				*ft_lstnew(void *content);
+void				ft_lstadd_front(t_list **lst, t_list *new);
 void				ft_striteri(char *s, void (*f)(unsigned int, char*));
 char				*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 size_t				ft_strlen(const char *str);
@@ -44,7 +52,7 @@ void				*ft_calloc(size_t count, size_t size);
 char				*ft_strdup(const char *s);
 char				*ft_strjoin(char const *s1, char const *s2);
 size_t				ft_strlcat(char *dst, const char *src, unsigned int size);
-char				*ft_strnstr(const char *ha, const char *ne, unsigned int n);
+char				*ft_strnstr(const char *ha, const char *ne, size_t n);
 char				*ft_substr(char const *s, unsigned int start, size_t len);
 char				*ft_strtrim(char const *s1, char const *set);
 char				*ft_itoa(int n);
