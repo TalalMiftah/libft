@@ -6,7 +6,7 @@
 /*   By: tmiftah <tmiftah@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/11 12:30:28 by tmiftah           #+#    #+#             */
-/*   Updated: 2022/10/30 09:01:28 by tmiftah          ###   ########.fr       */
+/*   Updated: 2022/11/01 07:49:48 by tmiftah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,23 +30,23 @@ void				ft_putchar_fd(char c, int fd);
 void				ft_putstr_fd(char *s, int fd);
 void				ft_putendl_fd(char *s, int fd);
 void				ft_putnbr_fd(int n, int fd);
-int					ft_isalpha(char str);
+int					ft_isalpha(int c);
 int					ft_isascii(int i);
-int					ft_isdigit(char c);
+int					ft_isdigit(int c);
 int					ft_isalnum(int c);
 int					ft_isprint(char c);
 void				*ft_memset(void *dest, int c, size_t count);
 int					ft_strncmp(const char *s1, const char *s2, unsigned int n);
 int					ft_tolower(int c);
 int					ft_toupper(int c);
-void				ft_bzero(void *s, unsigned int n);
+void				ft_bzero(void *s, size_t n);
 void				*ft_memchr(void *str, int c, unsigned int n);
 int					ft_memcmp(void *str1, void *str2, unsigned int n);
 void				*ft_memmove(void *dst, const void *src, unsigned int ln);
 char				*ft_strchr(const char *s, int c);
 char				*ft_strrchr(const char *s, int c);
 size_t				ft_strlcpy(char *dest, const char *src, unsigned int size);
-void				*ft_memcpy(void *dest, const void *src, unsigned int n);
+void				*ft_memcpy(void *dest, const void *src, size_t n);
 int					ft_atoi(const char *str);
 void				*ft_calloc(size_t count, size_t size);
 char				*ft_strdup(const char *s);

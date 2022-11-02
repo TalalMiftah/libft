@@ -6,13 +6,10 @@
 /*   By: tmiftah <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/05 14:32:15 by tmiftah           #+#    #+#             */
-/*   Updated: 2022/10/14 09:59:12 by tmiftah          ###   ########.fr       */
+/*   Updated: 2022/10/30 20:09:57 by tmiftah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-int	ft_isalpha(int str)
+int	ft_isalpha(int c)
 {
-	if ((str >= 97 && str <= 122) || (str >= 65 && str <= 90))
-		return (1);
-	else
-		return (0);
+	return ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'));
 }
