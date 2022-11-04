@@ -6,7 +6,7 @@
 /*   By: tmiftah <tmiftah@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 22:19:17 by tmiftah           #+#    #+#             */
-/*   Updated: 2022/10/30 20:27:12 by tmiftah          ###   ########.fr       */
+/*   Updated: 2022/11/03 16:19:59 by tmiftah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,5 +25,5 @@ char	*ft_strchr(const char *s, int c)
 	}
 	if (*c1 == '\0' && *c1 == (char)c)
 		return (c1);
-	return (NULL);
+	return (0);
 }

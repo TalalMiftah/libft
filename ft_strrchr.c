@@ -6,7 +6,7 @@
 /*   By: tmiftah <tmiftah@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/09 12:41:34 by tmiftah           #+#    #+#             */
-/*   Updated: 2022/10/20 10:57:57 by tmiftah          ###   ########.fr       */
+/*   Updated: 2022/11/03 16:25:52 by tmiftah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include"libft.h"
@@ -22,7 +22,7 @@ char	*ft_strrchr(const char *s, int c)
 	r = 0;
 	while (ssize >= 0)
 	{
-		if (c1[ssize] == (unsigned char)c)
+		if (c1[ssize] == (char)c)
 		{
 			r = 1;
 			break ;
