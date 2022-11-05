@@ -63,7 +63,7 @@ static void	frees(char **ptr, int j)
 {
 	while (j > 0)
 	{
-		free(ptr[j]);
+		free(ptr[j - 1]);
 		j--;
 	}
 	free(ptr);
