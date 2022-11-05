@@ -22,8 +22,8 @@ SRC = ft_memset.c ft_atoi.c ft_isalpha.c ft_isdigit.c ft_bzero.c \
 				 ft_strjoin.c ft_strtrim.c ft_strmapi.c ft_striteri.c \
 				 ft_split.c
 
-SRCB = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c \
-		ft_lstadd_back.c ft_lstdelone.c ft_lstclear.c
+SRCB = ft_lstadd_front.c ft_lstnew.c ft_lstlast.c ft_lstsize.c ft_lstadd_back.c \
+		ft_lstmap.c ft_lstiter.c ft_lstclear.c ft_lstdelone.c
 
 OBJ = $(SRC:%.c=%.o)
 
@@ -38,18 +38,20 @@ INCLUDE = libft.h
 all: $(NAME)
 
 bonus: $(OBJB)
-	ar rc $(NAME) $(OBJB)
+	@ar rc $(NAME) $(OBJB)
 
 $(NAME): $(OBJ)
-	ar rc $(NAME) $(OBJ)
+	@ar rc $(NAME) $(OBJ)
 
 %.o : %.c $(INCLUDE)
-	@$(CC) -c $(CFALGS) $<
+	$(CC) -c $(CFALGS) $<
 
 clean:
-	rm -rf $(OBJ) $(OBJB)
+	@rm -rf $(OBJ) $(OBJB)
 
 fclean: clean
-	rm -rf $(NAME)
+	@rm -rf $(NAME)
 
 re: fclean all
+
+.PHONY: clean fclean re all
