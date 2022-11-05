@@ -59,12 +59,14 @@ static char	*allocation_of_words(const char *s, char c)
 	return (word);
 }
 
-char	**frees(char **ptr, int i)
+static void	frees(char **ptr, int j)
 {
-	while (i--)
-		free (ptr[i]);
-	free (ptr);
-	return (ptr);
+	while (j > 0)
+	{
+		free(ptr[j]);
+		j--;
+	}
+	free(ptr);
 }
 
 char	**ft_split(char const *s, char c)
@@ -87,7 +89,7 @@ char	**ft_split(char const *s, char c)
 		if (s[i])
 			ptr[j++] = allocation_of_words(&s[i++], c);
 		if (j > 0 && !ptr[j - 1])
-			return (frees(ptr - 1, j));
+			return (frees(ptr, j), NULL);
 		while (s[i] && s[i] != c)
 			i++;
 	}
