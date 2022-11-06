@@ -17,7 +17,7 @@ static int	int_count(int i)
 	int	r;
 
 	r = 0;
-	if (i == 0 || i < 0)
+	if (i <= 0)
 		r = 1;
 	while (i != 0)
 	{
@@ -37,7 +37,7 @@ char	*ft_itoa(int n)
 	i = 0;
 	result = n;
 	ln = int_count(n);
-	s = (char *)malloc(ln + 1);
+	s = malloc(ln + 1);
 	if (!s)
 		return (NULL);
 	if (result < 0)

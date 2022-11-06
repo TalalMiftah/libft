@@ -14,14 +14,12 @@
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
-	char	*s;
 	size_t	len_dst;
 	size_t	res;
 	size_t	len_src;
 	size_t	i;
 
-	s = (char *)src;
-	len_src = ft_strlen(s);
+	len_src = ft_strlen(src);
 	res = 0;
 	i = 0;
 	if (dst == NULL && size == 0)
@@ -31,9 +29,9 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 		res = len_src + len_dst;
 	else
 		return (len_src + size);
-	while (s[i] && (len_dst + 1) < size)
+	while (src[i] && (len_dst + 1) < size)
 	{
-		dst[len_dst] = s[i];
+		dst[len_dst] = src[i];
 		len_dst++;
 		i++;
 	}

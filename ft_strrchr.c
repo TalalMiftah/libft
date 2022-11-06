@@ -24,13 +24,10 @@ char	*ft_strrchr(const char *s, int c)
 	{
 		if (c1[ssize] == (char)c)
 		{
-			r = 1;
-			break ;
+			return (c1 + ssize);
 		}
 		else
 			ssize--;
 	}
-	if (r == 0 && c != '\0')
-		return (0);
-	return (c1 + ssize);
+	return (0);
 }

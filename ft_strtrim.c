@@ -16,14 +16,12 @@ static int	start(char const *s1, char const *set)
 {
 	int		ln;
 	int		i;
-	char	*s;
 
 	i = 0;
-	s = (char *)s1;
-	ln = ft_strlen(s);
+	ln = ft_strlen(s1);
 	while (i < ln)
 	{
-		if (ft_strchr(set, s[i]) == 0)
+		if (ft_strchr(set, s1[i]) == 0)
 			break ;
 		i++;
 	}
@@ -61,7 +59,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	if (st >= ed)
 		return (ft_strdup(""));
 	else
-		ptr = (char *)malloc(sizeof(char) * (ed - st + 1));
+		ptr = malloc(ed - st + 1);
 	if (!ptr)
 		return (NULL);
 	ft_strlcpy(ptr, (s1 + st), (ed - st + 1));
