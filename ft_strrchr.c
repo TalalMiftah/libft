@@ -23,9 +23,7 @@ char	*ft_strrchr(const char *s, int c)
 	while (ssize >= 0)
 	{
 		if (c1[ssize] == (char)c)
-		{
 			return (c1 + ssize);
-		}
 		else
 			ssize--;
 	}
